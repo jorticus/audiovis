@@ -1,7 +1,7 @@
 audiovis
 ========
 
-Audio Visualizer RGB lights, using Python & Arduino
+Sound Reactive RGB lights, using Python & Arduino
 
 LED strip will be a blue colour when the room is calm, and progressively turn to red as the room gets noisy.
 
