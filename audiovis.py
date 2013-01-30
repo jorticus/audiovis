@@ -1,13 +1,13 @@
 #
-# Rowdz RGB lights, v1.0
+# Audio Visualizer RGB lights, v1.0
 # Author: Jared Sanson
-# Date: 11/01/2013
+# Created: 11/01/2013
 #
 # LED strip will be a blue colour when the room is calm,
 # and progressively turn to red as the room gets rowdy.
 # 
 # The settings below should work fine,
-# try adjusting the microphone volume before you touch them!
+# try adjusting the microphone volume/gain before you touch them!
 #
 # Connects to an arduino, which controls the RGB led strip.
 #
