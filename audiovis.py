@@ -4,7 +4,7 @@
 # Created: 11/01/2013
 #
 # LED strip will be a blue colour when the room is calm,
-# and progressively turn to red as the room gets rowdy.
+# and progressively turn to red as the room gets noisy.
 # 
 # The settings below should work fine,
 # try adjusting the microphone volume/gain before you touch them!
@@ -274,7 +274,7 @@ while True:
     brightness = limit(MIN_BRIGHTNESS + (loudness * modulation), 0.0, 1.0)
 
     # Hue modulation (power relationship)
-    mapping = 1.1 - (10 ** (1.0 - limit(noisiness, 0.0, 1.0)) / 10.0)
+    mapping = (10 ** limit(noisiness, 0.0, 1.0)) / 10.0
     mapping = mapval(mapping, 0.1, 1.0, 0.0, 1.0)
     hue = mapval(mapping, 0.0, 1.0, MIN_HUE, MAX_HUE)
 
