@@ -275,7 +275,7 @@ while True:
 
     # Hue modulation (power relationship)
     mapping = (10 ** limit(noisiness, 0.0, 1.0)) / 10.0
-    mapping = mapping * 1.1 + 0.11
+    mapping = mapping * 1.1 - 0.11
     hue = mapval(mapping, 0.0, 1.0, MIN_HUE, MAX_HUE)
 
     # Display colour
